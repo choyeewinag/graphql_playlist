@@ -7,7 +7,7 @@ const app = express();
 // bind express with graphql
 app.use('/graphql', graphqlHTTP({
     schema,
-    graphiql: true
+     graphiql: true //error message: {"errors":[{"message":"Must provide query string."}]}
 }));
 
 app.listen(4000, () => {
